@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Paul Englmeier</title>
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <style>
+    /* Box sizing rules */
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+    }
+
+    /* Prevent font size inflation */
+    html {
+      -moz-text-size-adjust: none;
+      -webkit-text-size-adjust: none;
+      text-size-adjust: none;
+    }
+
+    /* Make images easier to work with */
+    img,
+    picture {
+      max-width: 100%;
+      display: block;
+    }
+
+    @font-face {
+      font-family: 'Bastardo';
+      src: url('assets/BastardoGrotesk-Semibold.ttf') format('truetype');
+      font-weight: 600;
+    }
+
+    @font-face {
+      font-family: 'Bastardo';
+      src: url('assets/BastardoGrotesk-Bold.ttf') format('truetype');
+      font-weight: 800;
+    }
+
+    body {
+      --col-width: 420px;
+      --font-size: 33px;
+      --margin: calc(var(--font-size) * .5);
+      font-family: 'Bastardo', sans-serif;
+      font-weight: 600;
+      font-size: var(--font-size);
+      letter-spacing: -.5px;
+      line-height: 1.5;
+      margin: 0;
+      padding: 0;
+
+      /* mobile body full width */
+      position: fixed;
+      width: 100%;
+    }
+
+    .container {
+      padding: 33px;
+      width: 100%;
+    }
+
+    p {
+      line-height: 1;
+      margin: 0;
+    }
+
+    .description {
+      font-weight: 800;
+      display: flex;
+      margin-bottom: var(--margin);
+    }
+
+    .info {
+      display: flex;
+      margin-bottom: var(--margin);
+    }
+
+    .name {
+      display: flex;
+      min-width: var(--col-width);
+    }
+
+    .contact {
+      display: flex;
+      flex-direction: column;
+      min-width: var(--col-width);
+    }
+
+    .accounts {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .tab {
+      display: inline-block;
+      width: 130px;
+    }
+
+    a {
+      text-decoration: none;
+      color: black;
+    }
+
+    a:hover {
+      font-weight: 800;
+    }
+
+    .call-to-action {
+      display: inline-block;
+    }
+
+    @media screen and (max-width: 900px) {
+      body {
+        --font-size: 20px;
+      }
+
+      .description {
+        flex-direction: column;
+      }
+
+      .name {
+        margin-bottom: var(--margin);
+      }
+
+      .brackets {
+        display: inline-block;
+        width: 100%;
+      }
+
+      .info {
+        flex-direction: column;
+      }
+
+      .contact {
+        margin-bottom: var(--margin);
+      }
+
+      .accounts {
+        display: flex;
+        flex-direction: row;
+      }
+
+      .accounts p {
+        display: flex;
+        flex-direction: column;
+        width: 150px;
+      }
+
+
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="description">
+      <p class="name">Paul Englmeier</p>
+      <p class="brackets">(is an artist/designer, who lives and works in Augsburg, Germany)</p>
+    </div>
+    <div class="info">
+      <div class="contact">
+        <p>0160/1021311</p>
+        <p><a href="mailto:englmeierpaul@live.com">englmeierpaul@live.com</a></p>
+      </div>
+      <div class="accounts">
+        <p><span class="tab">Art:</span> <a target="_blank" href="https://instagram.com/iiiiggoooorr">@iiiiggoooorr</a></p>
+        <p><span class="tab">Tattoo:</span> <a target="_blank" href="https://instagram.com/blumenwiese2k1">@blumenwiese2k1</a></p>
+      </div>
+    </div>
+    <div class="call-to-action">
+      <p>For any inquiries, please get in touch via e-mail or Instagram.</p>
+    </div>
+  </div>
+</body>
+
+</html>
