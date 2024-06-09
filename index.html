@@ -42,7 +42,7 @@
 
     body {
       --col-width: 420px;
-      --font-size: 33px;
+      --font-size: 28px;
       --margin: calc(var(--font-size) * .5);
       font-family: 'Bastardo', sans-serif;
       font-weight: 600;
@@ -58,8 +58,10 @@
     }
 
     .container {
-      padding: 33px;
+      padding: var(--font-size);
       width: 100%;
+      display: flex;
+      flex-direction: column;
     }
 
     p {
@@ -114,7 +116,7 @@
 
     @media screen and (max-width: 900px) {
       body {
-        --font-size: 20px;
+        --font-size: 18px;
       }
 
       .description {
@@ -171,7 +173,7 @@
       </div>
     </div>
     <div class="call-to-action">
-      <p>For any inquiries, please get in touch via e-mail or Instagram.</p>
+      <p>For any inquiries, please get in touch via e‑mail or Instagram.</p>
     </div>
   </div>
 </body>
